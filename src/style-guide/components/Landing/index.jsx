@@ -3,7 +3,7 @@ import styles from './style.module.scss'
 
 const Landing = () => {
     return (
-        <div className={styles.container}>
+        <div className={styles.container} id="home">
             <div className={styles.semi_heading}>
                 <div className={styles.paraA}>
                     E
@@ -61,6 +61,9 @@ const Landing = () => {
                 <span className={styles.spanC}>KNOWLEDGE</span>
                 <br/>
                 KNOWLEDGE
+            </div>
+            <div className={styles.heading}>
+
             </div>
         </div>
     )

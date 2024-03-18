@@ -7,16 +7,21 @@
         font-family: 'Protest Strike', sans-serif;
         font-size: 4.5rem;
         color: rgb(8, 80, 13);
+        &::selection{
+            color:white;
+            background: rgb(246, 1, 7);
+        }
     }
-
+    
     .collection {
         display: flex;
         flex-direction: row;
         margin: 5%;
         flex-wrap: wrap;
         justify-content: center;
-
+        
         .book_container {
+            z-index: -1 !important;
             display: flex;
             flex-direction: column;
             width: 20rem;
@@ -26,9 +31,9 @@
             align-items: center;
             background: rgba(255, 255, 255, 0.2);
             border-radius: 16px;
-            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
             backdrop-filter: blur(5px);
             -webkit-backdrop-filter: blur(5px);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
             border: 1px solid rgba(255, 255, 255, 0.3);
             margin: 2%;
             transition: border 1s, box-shadow 1s;
@@ -50,11 +55,19 @@
                 font-size: 1.1rem;
                 letter-spacing: -0.2rem;
                 padding: 5%;
+                &::selection{
+                    color:white;
+                    background: rgb(246, 1, 7);
+                }
             }
-
-            .book-author
+            
+            .book_author
             {
                 justify-content: flex-end;
+                &::selection{
+                    color:white;
+                    background: rgb(246, 1, 7);
+                }
             }
         }
     }

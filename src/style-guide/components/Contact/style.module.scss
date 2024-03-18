@@ -10,6 +10,7 @@
         margin-left: 10vw;
         margin-right: 10vw;
 
+
         .left {
             width: 50vw;
             margin-right: 10%;
@@ -32,6 +33,11 @@
                 background: radial-gradient(circle at 1vw 0vh,
                         rgb(246, 1, 7),
                         rgb(255, 234, 0));
+
+                &::selection {
+                    color: white;
+                    background: rgb(246, 1, 7);
+                }
             }
 
             .contactimg {
@@ -60,6 +66,7 @@
                 flex-direction: column;
                 margin-top: 2%;
 
+
                 .contact_item {
                     padding-bottom: 3%;
 
@@ -67,6 +74,11 @@
                         font-size: 1.3rem;
                         color: var(--font-color-1);
                         padding-bottom: 1%;
+
+                        &::selection {
+                            color: white;
+                            background: rgb(246, 1, 7);
+                        }
                     }
 
                     .contact_place {
@@ -80,6 +92,11 @@
                         color: var(--white);
                         outline: none;
 
+                        &::selection {
+                            color: white;
+                            background: rgb(246, 1, 7);
+                        }
+
                         &::placeholder {
                             font-size: 1.2rem;
                         }
@@ -89,10 +106,16 @@
                 .contact_areaitem {
                     padding-bottom: 3%;
 
+
                     .contact_title {
                         font-size: 1.3rem;
                         color: var(--font-color-1);
                         padding-bottom: 1%;
+
+                        &::selection {
+                            color: white;
+                            background: rgb(246, 1, 7);
+                        }
                     }
 
 
@@ -106,6 +129,11 @@
                         border-top-right-radius: 0.5rem;
                         border-bottom-left-radius: 0.5rem;
                         height: 14rem;
+
+                        &::selection {
+                            color: white;
+                            background: rgb(246, 1, 7);
+                        }
 
                         &::placeholder {
                             font-size: 1.2rem;
@@ -139,6 +167,37 @@
                     }
                 }
 
+            }
+        }
+    }
+
+    .social_section {
+        margin-left: 7vw;
+        margin-right: 7vw;
+        margin-top: 2vh;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .social_item {
+            border-radius: 1.5rem;
+            padding: 2%;
+            padding-left: 10%;
+            padding-right: 10%;
+            margin: 1%;
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+            box-shadow: 0 4px 30px rgba(227, 92, 19, 0.242);
+            border: 1px solid rgba(211, 146, 115, 0.3);
+
+            &:hover {
+                box-shadow: 0 4px 30px rgba(227, 92, 19, 0.242);
+                border: 1px solid rgba(231, 89, 18, 0.642);
+            }
+
+            .icon {
+                font-size: 2rem;
+                color: rgb(207, 31, 0);
             }
         }
     }

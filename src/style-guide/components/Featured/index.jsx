@@ -4,7 +4,7 @@ import TopRated from '../../../../TopRated.json'
 
 const Featured = () => {
   return (
-    <div className={styles.container}>
+    <div className={styles.container} id="toprated">
       <div className={styles.heading}>TOP 10 BEST RATED BOOKS FOR YOU</div>
       <div className={styles.collection}>
         {TopRated.slice(0, 10).map((book) => {

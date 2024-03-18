@@ -1,17 +1,19 @@
-import React,{useState} from 'react'
+import React, { useState } from 'react'
 import styles from './style.module.scss'
+import Socials from '../../../../socials.json';
+import { Icon } from '@iconify/react';
 
 const Contact = () => {
     const [name, setName] = useState();
     const [email, setEmail] = useState();
     const [msg, setMsg] = useState();
     return (
-        <div className={styles.container}>
+        <div className={styles.container} id="contact">
             <div className={styles.inner_container}>
                 <div className={styles.left}>
                     <div className={styles.heading}>
-                        Having any Doubts? 
-                        <br/>
+                        Having any Doubts?
+                        <br />
                         Feel free to drop a message
                     </div>
                     <div className={styles.contactimg}></div>
@@ -66,7 +68,15 @@ const Contact = () => {
                     </form>
                 </div>
             </div>
-            <div className={styles.social_section}></div>
+            <div className={styles.social_section}>
+                {Socials.map((ele) => {
+                    return (
+                        <a href={ele.link} target="_blank" title={ele.name} key={ele.id} className={styles.social_item}>
+                            <Icon icon={`cib:${ele.name}`} className={styles.icon} />
+                        </a>
+                    );
+                })}
+            </div>
         </div>
     )
 }

@@ -5,10 +5,16 @@
     flex-direction: column;
 
     .heading {
-        margin: 5%;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-bottom: 5%;
         font-family: 'Protest Strike', sans-serif;
         font-size: 4.5rem;
         color: rgb(8, 80, 13);
+        &::selection{
+            color:white;
+            background: rgb(246, 1, 7);
+        }
     }
 
     .subcontainer {
@@ -21,6 +27,10 @@
             font-family: 'Archivo', sans-serif;
             font-size: 2rem;
             margin-right: 2rem;
+            &::selection{
+                color:white;
+                background: rgb(246, 1, 7);
+            }
         }
 
         .inputform {
@@ -31,6 +41,11 @@
                 width: 40vw;
                 font-size: 1.3rem;
                 color: rgb(8, 80, 13);
+
+                &::selection {
+                    color: white;
+                    background: rgb(246, 1, 7);
+                }
 
                 &::placeholder {
                     color: rgb(8, 80, 13);

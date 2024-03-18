@@ -1,0 +1,46 @@
+.container {
+    display: flex;
+    position: fixed;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 95vw;
+    height: 7vh;
+}
+
+
+.menu {
+    padding: 0.5rem 1rem;
+    border-radius: 1.5rem;
+    color: white;
+    background: radial-gradient(circle at bottom right, rgb(255, 143, 0), rgb(207, 31, 0));
+    display: flex;
+    align-items: center;
+}
+
+.items {
+    width: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: width 2s ease, opacity 1s ease;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu:hover+.items,
+.items:hover {
+    opacity: 1;
+    width: 30vw;
+}
+
+.item {
+    text-decoration: none;
+    color: black;
+    padding: 2%;
+    font-size: 1.3rem;
+
+    &:hover {
+        color: rgba(0, 0, 0, 0.534);
+    }
+}
