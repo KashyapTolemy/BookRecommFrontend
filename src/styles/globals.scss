@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+// font-family: "Lora", serif;
+@import url("https://fonts.googleapis.com/css?family=Dekko|Lato:900|Rock+Salt");
+// font-family: "Dekko", cursive;
+// font-family: "Lato", sans-serif;
+// font-family: "Rock Salt", cursive;
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Mega:wght@100..900&display=swap');
+// font-family: "Lexend Mega", sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
+// font-family: "Archivo", sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap');
+// font-family: "Protest Strike", sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+// font-family: "Anton", sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+// font-family: "Archivo Black", sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+// font-family: "Lilita One", sans-serif;
+
+:root {
+  --primary-color-1: rgb(250, 248, 241);
+  --primary-color-2: rgb(250, 234, 177);
+  --primary-color-3: rgb(122, 0, 149);
+  --primary-color-4: rgb(197, 137, 64);
+  --spinner-bg: rgba(250, 248, 241, 0.5);
+  --heroSection-bg1: rgb(255, 230, 253);
+  --heroSection-bg2: rgb(174, 75, 255);
+  --white: black;
+  --black: white;
+  --bloblight-blue: #abd3f7e6;
+  --hero-ring-light: rgb(174, 75, 255);
+  --card-bg1: rgba(0, 0, 0, 0.2);
+  --profilecard-bg1: rgb(35, 3, 35);
+  --ring-shadow: grey;
+  --btn-bg-1: rgb(166, 57, 255);
+  --btn-bg-2: rgb(191, 112, 255);
+  --module-bg: rgba(255, 255, 255, 0.7);
+  --bg-1: rgb(219, 241, 246);
+  --bg-2: rgba(255, 244, 254, 0.5);
+  --card-bg: rgba(255, 255, 255, 0.35);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  // font-weight: 600;
+  // font-size: 1.1rem;
+  // font-family: "cfour";
+}
+
+img {
+  pointer-events: none;
+}
+
+.btn {
+  padding: 0.5rem 1rem;
+  border: none;
+  outline: none;
+  background: radial-gradient(circle at bottom right,
+      var(--btn-bg-1),
+      var(--btn-bg-2));
+  border-radius: 0.3rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  color: white;
+  text-decoration: none;
+
+  &:hover {
+    background: radial-gradient(circle at top right,
+        rgba(255, 255, 255, 0.498),
+        #6085a8);
+  }
+}
+
+:root {
+  --pos-top: 0;
+  --pos-left: 0;
+}
+
+// body {
+//   // overflow-y: scroll;
+// }
+
+::-webkit-scrollbar {
+  width: 0.5rem;
+  display: none;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  width: 0.5rem;
+  border-radius: 0.3rem;
+  background: var(--card-bg);
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    background: var(--white);
+  }
+}
+
+.on-scrollbar::-webkit-scrollbar {
+  display: block !important;
+}
+
+@media (max-width: 769px) {
+  ::-webkit-scrollbar {
+    width: 0rem;
+  }
+}

@@ -1,0 +1,35 @@
+.container {
+    // display: flex;
+    // flex-direction: column;
+
+    .cursor {
+        position: absolute;
+        height: 15rem;
+        width: 15rem;
+        border-radius: 50%;
+        top: 50%;
+        left: 50%;
+        z-index: -1;
+        transform: translate(-50%, -50%);
+        background: linear-gradient(to right, orange, rgb(246, 1, 7));
+        backdrop-filter: blur(4rem);
+    }
+}
+
+@keyframes cursor_animate {
+    0% {
+        rotate: 0deg;
+    }
+
+    50% {
+        scale: 1 1.1;
+    }
+
+    75% {
+        scale: 1.1 1;
+    }
+
+    100% {
+        rotate: 360deg;
+    }
+}
