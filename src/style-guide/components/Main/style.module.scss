@@ -1,7 +1,9 @@
 .container
 {
-    height: max-content;
+    // height: max-content;
     display: flex;
     flex-direction: column;
     backdrop-filter: blur(4rem);
+    width: 100vw;
+    overflow-x: hidden;
 }

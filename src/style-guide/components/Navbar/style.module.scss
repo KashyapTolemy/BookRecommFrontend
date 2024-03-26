@@ -5,6 +5,14 @@
     align-items: flex-end;
     width: 95vw;
     height: 7vh;
+    z-index: 5;
+    &:hover{
+        .items{
+    
+            opacity: 1;
+            width: 30vw;
+        }
+    }
 }
 
 
@@ -21,18 +29,13 @@
     width: 0;
     overflow: hidden;
     opacity: 0;
-    transition: width 2s ease, opacity 1s ease;
+    transition: width 0.5s ease-in, opacity 0.1s ease;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
 }
 
-.menu:hover+.items,
-.items:hover {
-    opacity: 1;
-    width: 30vw;
-}
 
 .item {
     text-decoration: none;
