@@ -53,18 +53,19 @@ const Landing = () => {
             <div className={styles.hero_img}></div>
             <div className={styles.heading}>
                 KNOWLEDGE
-                <br/>
+                <br />
                 KNOWLEDGE
-                <br/>
+                <br />
                 KNOWLEDGE
-                <br/>
-                <span className={styles.spanC}>KNOWLEDGE</span>
-                <br/>
+                <br />
+                {/* <span className={styles.spanC}>KNOWLEDGE</span> */}
+                KNOWLEDGE
+                <br />
                 KNOWLEDGE
             </div>
-            <div className={styles.heading}>
+            {/* <div className={styles.heading}>
 
-            </div>
+            </div> */}
         </div>
     )
 }

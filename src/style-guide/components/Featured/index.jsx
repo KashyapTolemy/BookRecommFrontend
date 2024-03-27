@@ -39,8 +39,10 @@ const Featured = () => {
             <img src={book.image} alt={book.book_name} className={styles.book_cover} />
             <div className={styles.book_title}>{book.book_name}</div>
             <div className={styles.book_author}>by {book.author}</div>
-            <div className={styles.book_rating}>Rating: {book.rating}</div>
-            <div className={styles.book_votes}>Votes: {book.votes}</div>
+            <div className={styles.rv_container}>
+              <div className={styles.book_rating}>Rating: {book.rating}</div>
+              <div className={styles.book_votes}>Votes: {book.votes}</div>
+            </div>
           </div>
         ))}
       </div>

@@ -1,16 +1,23 @@
 .container {
     display: flex;
-    position: fixed;
     justify-content: flex-end;
-    align-items: flex-end;
-    width: 95vw;
-    height: 7vh;
-    z-index: 5;
-    &:hover{
-        .items{
-    
+    align-items: center;
+    position: fixed;
+    top: 1rem;
+    right: 0;
+    width: auto;
+    height: auto;
+    padding: 0.5%;
+
+    z-index: 50;
+    background: none;
+    backdrop-filter: blur(4rem);
+    border-radius: 1.5rem;
+
+    &:hover {
+        .items {
             opacity: 1;
-            width: 30vw;
+            width: 30rem;
         }
     }
 }
@@ -45,5 +52,20 @@
 
     &:hover {
         color: rgba(0, 0, 0, 0.534);
+    }
+}
+
+@media screen and (max-width:580px) {
+    .container {
+        flex-direction: column !important;
+        &:hover {
+            .items {
+                width: 25rem !important;
+            }
+        }
+    }
+
+    .item {
+        font-size: 1.2rem;
     }
 }

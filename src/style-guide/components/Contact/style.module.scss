@@ -202,3 +202,37 @@
         }
     }
 }
+
+@media screen and (max-width:1000px) {
+    .inner_container {
+        flex-direction: column !important;
+    }
+
+    .left {
+        flex-direction: row !important;
+        width: 100vw !important;
+        height: max-content !important;
+        margin-bottom: 5vh !important;
+    }
+
+    .heading {
+        width: 60vw !important;
+        height: 30vh !important;
+    }
+
+    .contactimg {
+        // width: 30vw !important;
+        display: block !important;
+        height: 0 !important;
+    }
+
+
+    .right {
+        width: 80vw !important;
+        padding: 5% !important;
+    }
+
+    .contact_place {
+        width: 50vw !important;
+    }
+}

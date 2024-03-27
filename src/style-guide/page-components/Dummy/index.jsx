@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from "react";
 import styles from "./style.module.scss";
 import Main from "@/style-guide/components/Main";
+import Navbar from "@/style-guide/components/Navbar";
 
 const Dummy = () => {
   const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
@@ -25,6 +26,7 @@ const Dummy = () => {
         className={styles.cursor}
         style={{ left: `${cursorPosition.x}px`, top: `${cursorPosition.y}px` }}
       ></div>
+      <Navbar />
       <Main />
     </div>
   );

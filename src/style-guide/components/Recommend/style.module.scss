@@ -4,6 +4,7 @@
     width: 100vw;
     display: flex;
     flex-direction: column;
+    overflow-x: hidden;
 
     .heading {
         margin-left: 5%;
@@ -12,6 +13,7 @@
         font-family: 'Protest Strike', sans-serif;
         font-size: 4.5rem;
         color: rgb(8, 80, 13);
+        word-wrap: break-word;
 
         &::selection {
             color: white;
@@ -41,9 +43,9 @@
                 outline: none;
                 border: none;
                 border-bottom: 0.1rem solid rgb(246, 1, 7);
+                background: transparent;
                 width: 40vw;
                 font-size: 1.3rem;
-                color: rgb(8, 80, 13);
 
                 &::selection {
                     color: white;
@@ -134,11 +136,33 @@
 
             .book_author {
                 justify-content: flex-end;
-
+                font-family: "Dekko", cursive;
+                font-size: 1.2rem;
+                font-weight: 700;
+                color:rgb(8, 80, 13);
                 &::selection {
                     color: white;
                     background: rgb(246, 1, 7);
                 }
+            }
+        }
+    }
+
+    .empty_collection {
+        display: flex;
+        flex-direction: row;
+        margin: 5%;
+        flex-wrap: wrap;
+        justify-content: center;
+        .empty_message {
+            font-family: 'Lexend Mega', sans-serif;
+            font-size: 1.1rem;
+            letter-spacing: -0.2rem;
+            padding: 5%;
+            color: rgb(8, 80, 13);
+            &::selection {
+                color: white;
+                background: rgb(246, 1, 7);
             }
         }
     }
