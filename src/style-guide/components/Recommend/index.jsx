@@ -11,7 +11,7 @@ const Recommend = () => {
     e.preventDefault();
     setSearched(true);
     try {
-      const response = await axios.post('http://localhost:5000/api/recommend', { bookName });
+      const response = await axios.post(`${process.env.NEXT_PUBLIC_WEB_URL}/api/recommend`, { bookName });
       setRecommendedBooks(response.data.recommendedBooks);
       console.log(response.data.recommendedBooks)
     } catch (error) {
@@ -52,7 +52,7 @@ const Recommend = () => {
           </div>) : (
           <div className={styles.empty_collection}>
             <div className={styles.empty_message}>
-            ☹️We couldn't find similar books at the moment. Please try again later or explore other recommendations.
+              ☹️We couldn't find similar books at the moment. Please try again later or explore other recommendations.
             </div>
           </div>
         ))) : (<></>)
